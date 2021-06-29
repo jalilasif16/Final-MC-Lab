@@ -1,16 +1,16 @@
 package com.jalilasif.mc_jalilasif_192021.Activity;
 
-import android.os.Bundle;
-
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.os.Bundle;
 
-public class SignIn extends AppCompatActivity {
+import com.jalilasif.mc_jalilasif_192021.R;
 
+public class Login extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
+        setContentView(R.layout.activity_login);
     }
 }

@@ -1,20 +1,19 @@
 <resources>
     <string name="app_name">MC_JalilAsif_192021</string>
-    <string name="todo">TODO</string>
     <string name="final_lab">Final Lab</string>
     <string name="todo">TODO</string>
     <string name="enter_email">Enter Email</string>
     <string name="enter_password">Enter Password</string>
-    <string name="sign_in">Sign In</string>
     <string name="sign_up">Sign Up</string>
     <string name="forgot_password">Forgot Password</string>
     <string name="enter_name">Enter Name</string>
-    <string name="enter_email">Enter Email</string>
     <string name="create_password">Create Password</string>
     <string name="re_enter_password">Re-Enter Password</string>
     <string name="sign_in">Sign In</string>
-    <string name="sign_up">Sign Up</string>
     <string name="female">Female</string>
     <string name="male">Male</string>
     <string name="gender">Gender</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_maps">Map</string>
 </resources>

@@ -1,47 +1,50 @@
 package com.jalilasif.mc_jalilasif_192021.Model;
 
 public class User {
-    String Name,Email,Password,Gender;
 
-    public User(String name, String email, String password, String gender) {
-        Name = name;
-        Email = email;
-        Password = password;
-        Gender = gender;
+    private String id;
+    private String name;
+    private String city;
+    private String age;
+
+
+
+    public User(String id, String name, String city, String age) {
+        this.id = id;
+        this.name = name;
+        this.city = city;
+        this.age = age;
     }
 
-    public User() {
+    public String getId() {
+        return id;
     }
 
-    public void setName(String name) {
-        Name = name;
-    }
-
-    public void setEmail(String email) {
-        Email = email;
-    }
-
-    public void setPassword(String password) {
-        Password = password;
-    }
-
-    public void setGender(String gender) {
-        Gender = gender;
+    public void setId(String id) {
+        this.id = id;
     }
 
     public String getName() {
-        return Name;
+        return name;
     }
 
-    public String getEmail() {
-        return Email;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public String getPassword() {
-        return Password;
+    public String getCity() {
+        return city;
     }
 
-    public String getGender() {
-        return Gender;
+    public void setCity(String city) {
+        this.city = city;
+    }
+
+    public String getAge() {
+        return age;
+    }
+
+    public void setAge(String age) {
+        this.age = age;
     }
 }

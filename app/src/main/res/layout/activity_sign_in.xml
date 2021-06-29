@@ -20,7 +20,7 @@
 
     <EditText
         android:layout_below="@+id/imageView"
-        android:id="@+id/SI_edt_email"
+        android:id="@+id/edt_email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:drawablePadding="10dp"
@@ -34,7 +34,7 @@
         android:autofillHints="true" />
 
     <EditText
-        android:id="@+id/SI_edt_pass"
+        android:id="@+id/edt_pass"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:drawablePadding="10dp"
@@ -44,7 +44,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="30dp"
         android:layout_marginLeft="20dp"
-        android:layout_below="@+id/SI_edt_email"
+        android:layout_below="@+id/edt_email"
         android:layout_marginStart="20dp"
         android:autofillHints="true" />
 
@@ -52,7 +52,7 @@
         android:id="@+id/btnSignIn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/SI_edt_pass"
+        android:layout_below="@id/edt_pass"
         android:text="@string/sign_in"
         android:textSize="15sp"
         android:layout_margin="80dp"
