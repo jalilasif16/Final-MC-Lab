@@ -1,4 +1,4 @@
-package com.jalilasif.mc_jalilasif_192021;
+package com.jalilasif.mc_jalilasif_192021.Activity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,6 +9,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.jalilasif.mc_jalilasif_192021.R;
 
 import java.util.Objects;
 

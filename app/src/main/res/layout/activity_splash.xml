@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
+    tools:context=".Activity.MainActivity"
     android:background="@drawable/bg">
 
     <ImageView
@@ -17,20 +17,20 @@
 
     <TextView
         android:id="@+id/finallab"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="206dp"
+        android:layout_height="145dp"
         android:layout_below="@id/hover"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="120dp"
-        android:layout_marginLeft="120dp"
-        android:layout_marginTop="-20dp"
-        android:layout_marginEnd="89dp"
-        android:layout_marginRight="89dp"
-        android:layout_marginBottom="44dp"
+        android:layout_marginStart="110dp"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="95dp"
+        android:layout_marginRight="95dp"
+        android:layout_marginBottom="45dp"
         android:text="@string/final_lab"
         android:textColor="@color/black"
         android:textSize="30sp" />
