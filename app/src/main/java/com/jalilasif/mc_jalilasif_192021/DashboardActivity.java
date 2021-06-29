@@ -17,11 +17,15 @@ import com.google.android.gms.location.FusedLocationProviderClient;
 import com.google.android.gms.location.LocationServices;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
+import com.jalilasif.mc_jalilasif_192021.Fragment.fraghobby;
+import com.jalilasif.mc_jalilasif_192021.Fragment.fraghobby1;
 
 public class DashboardActivity extends AppCompatActivity {
 
     TextView txtLoc;
     Button btn;
+
+    Button btn1,btn2,btn3;
 
     private FusedLocationProviderClient mfused;
 
@@ -31,9 +35,20 @@ public class DashboardActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
+        btn1= findViewById(R.id.hobby1);
+        btn2= findViewById(R.id.hobby2);
+
+
         btn = findViewById(R.id.button);
 
         mfused = LocationServices.getFusedLocationProviderClient(this);
+
+        getSupportFragmentManager().beginTransaction().add(R.id.container,new fraghobby()).commit();
+
+        btn1.setOnClickListener(v -> getSupportFragmentManager().beginTransaction().replace(R.id.container,new fraghobby()).commit());
+        btn2.setOnClickListener(v -> getSupportFragmentManager().beginTransaction().replace(R.id.container,new fraghobby1()).commit());
+
 
         btn.setOnClickListener(new View.OnClickListener() {
             @Override

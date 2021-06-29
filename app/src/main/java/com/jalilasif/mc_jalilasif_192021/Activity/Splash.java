@@ -11,6 +11,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.jalilasif.mc_jalilasif_192021.Activity.MainActivity;
+import com.jalilasif.mc_jalilasif_192021.MainActivity2;
 import com.jalilasif.mc_jalilasif_192021.R;
 
 public class Splash extends AppCompatActivity {
@@ -33,7 +34,7 @@ public class Splash extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent i = new Intent(Splash.this, MainActivity.class);
+                Intent i = new Intent(Splash.this, MainActivity2.class);
                 startActivity(i);
             }
         },3000);
