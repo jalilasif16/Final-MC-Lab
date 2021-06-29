@@ -46,4 +46,7 @@ dependencies {
         // Declare the dependencies for the desired Firebase products without specifying versions
         // For example, declare the dependencies for Firebase Authentication and Cloud Firestore
 
+    def lottieVersion = "3.4.0"
+    implementation "com.airbnb.android:lottie:$lottieVersion"
+
 }

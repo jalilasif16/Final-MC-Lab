@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">MC_JalilAsif_192021</string>
+    <string name="todo">TODO</string>
+    <string name="final_lab">Final Lab</string>
 </resources>
