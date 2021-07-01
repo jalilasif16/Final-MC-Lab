@@ -14,7 +14,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
+        android:textColor="@color/black"
         android:hint="Hobby"
+        android:textColorHint="#8A4040"
         android:autofillHints="true"
         android:inputType="text"
         />
@@ -24,6 +26,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
+        android:textColorHint="#8A4040"
+        android:textColor="@color/black"
         android:hint="Description"
         android:autofillHints="true"
         android:inputType="text"
@@ -35,17 +39,17 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Save"
+        android:textColor="#FF0303"
         android:layout_margin="10dp"
-        android:backgroundTint="@color/black"
         />
 
     <Button
         android:id="@+id/btn_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textColor="#FF0303"
         android:text="View"
         android:layout_margin="10dp"
-        android:backgroundTint="@color/black"
         />
 
 </LinearLayout>

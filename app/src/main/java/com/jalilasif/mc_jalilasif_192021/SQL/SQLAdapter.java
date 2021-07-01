@@ -27,7 +27,7 @@ public class SQLAdapter extends RecyclerView.Adapter<SQLAdapter.ViewHolder> {
     @Override
     public SQLAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
 
-        View view= LayoutInflater.from(parent.getContext()).inflate(R.layout.item,parent,false);
+        View view= LayoutInflater.from(parent.getContext()).inflate(R.layout.itemsql,parent,false);
 
         return new ViewHolder(view);
     }
