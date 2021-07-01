@@ -2,7 +2,6 @@ package com.jalilasif.mc_jalilasif_192021.Activity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.Display;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -20,7 +19,7 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.annotations.NotNull;
-import com.jalilasif.mc_jalilasif_192021.Model.User;
+import com.jalilasif.mc_jalilasif_192021.Model.userModel;
 import com.jalilasif.mc_jalilasif_192021.R;
 
 public class SignUp extends AppCompatActivity {
@@ -39,8 +38,8 @@ public class SignUp extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_up);
         name=findViewById(R.id.Name);
-        edt1=findViewById(R.id.edt_email);
-        edt2=findViewById(R.id.edt_pass);
+        edt1=findViewById(R.id.SUedt_email);
+        edt2=findViewById(R.id.SUedt_pass);
         myRef= FirebaseDatabase.getInstance().getReference("Data");
 
         btnSubmit = (Button) findViewById(R.id.btnSignIn2);
@@ -80,7 +79,7 @@ public class SignUp extends AppCompatActivity {
 
                 if(task.isSuccessful())
                 {
-                    User user = new User(Name, Email, Password, gender);
+                    userModel user = new userModel(Name, Email, Password, gender);
 
                     String userId = mAuth.getCurrentUser().getUid();
                     myRef.child(userId).setValue(user).addOnCompleteListener(new OnCompleteListener<Void>() {
@@ -88,7 +87,7 @@ public class SignUp extends AppCompatActivity {
                         public void onComplete(@NonNull @NotNull Task<Void> task) {
                             if(task.isSuccessful()){
                                 Toast.makeText(getApplicationContext(), "Data is inserted in real time database", Toast.LENGTH_SHORT).show();
-                                startActivity(new Intent(getApplicationContext(), Display.class));
+                                startActivity(new Intent(getApplicationContext(), SignIn.class));
                             }
                             else
                             {

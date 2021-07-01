@@ -23,9 +23,10 @@ import com.jalilasif.mc_jalilasif_192021.Fragment.fraghobby1;
 public class DashboardActivity extends AppCompatActivity {
 
     TextView txtLoc;
+
     Button btn;
 
-    Button btn1,btn2,btn3;
+    Button btn1,btn2;
 
     private FusedLocationProviderClient mfused;
 
@@ -33,7 +34,7 @@ public class DashboardActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_dashboard);
 
 
         btn1= findViewById(R.id.hobby1);

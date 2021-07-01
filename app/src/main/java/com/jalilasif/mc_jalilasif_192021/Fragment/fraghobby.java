@@ -59,6 +59,19 @@ public class fraghobby extends Fragment {
                     Map<String, Object> map = (Map<String, Object>) task.getResult();
 
                     Toast.makeText(getContext(),map.get("hobbies").toString(),Toast.LENGTH_LONG).show();
+                    RecyclerView recyclerView = view.findViewById(R.id.recyclerView);
+
+                    ArrayList<fragmodel> hooby = new ArrayList<>();
+
+                    hooby.add(new fragmodel("Cricket", "Good for health"));
+                    hooby.add(new fragmodel("Football", "Good for legs"));
+                    hooby.add(new fragmodel("Reading", "Skills"));
+                    hooby.add(new fragmodel("Singing", "love"));
+                    hooby.add(new fragmodel("Outing", "Enjoyment"));
+
+                    recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
+                    recyclerView.setAdapter(new fargadapter(hooby));
+
                 }
                 else
                 {
@@ -67,19 +80,8 @@ public class fraghobby extends Fragment {
             }
         });
 
-        RecyclerView recyclerView = view.findViewById(R.id.recyclerView);
-
-        ArrayList<fragmodel> hooby = new ArrayList<>();
-
-        hooby.add(new fragmodel("Cricket", "Good for health"));
-        hooby.add(new fragmodel("Football", "Good for legs"));
-        hooby.add(new fragmodel("Reading", "Skills"));
-        hooby.add(new fragmodel("Singing", "love"));
-        hooby.add(new fragmodel("Outing", "Enjoyment"));
-
-        recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
-        recyclerView.setAdapter(new fargadapter(hooby));
         return view;
+
 
     }
 }

@@ -1,7 +1,5 @@
 package com.jalilasif.mc_jalilasif_192021.Activity;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
@@ -11,8 +9,9 @@ import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.jalilasif.mc_jalilasif_192021.Activity.MainActivity;
-import com.jalilasif.mc_jalilasif_192021.MainActivity2;
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.jalilasif.mc_jalilasif_192021.DashboardActivity;
 import com.jalilasif.mc_jalilasif_192021.R;
 
 public class Splash extends AppCompatActivity {
@@ -32,12 +31,9 @@ public class Splash extends AppCompatActivity {
         img.setAnimation(scale);
         txt.setAnimation(bottom);
 
-        new Handler(Looper.getMainLooper()).postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                Intent i = new Intent(Splash.this, SignIn.class);
-                startActivity(i);
-            }
+        new Handler(Looper.getMainLooper()).postDelayed(() -> {
+            Intent i = new Intent(Splash.this, MainActivity.class);
+            startActivity(i);
         },6000);
     }
 }

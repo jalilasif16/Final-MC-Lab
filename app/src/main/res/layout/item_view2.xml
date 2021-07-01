@@ -51,6 +51,18 @@
                     />
 
 
+                <ImageButton
+                    android:id="@+id/list_item_delete_button"
+                    android:layout_width="50dp"
+                    android:layout_margin="6dp"
+                    android:layout_alignEnd="@+id/description"
+                    android:src="@drawable/ic_delete"
+                    android:background="?selectableItemBackground"
+                    android:layout_height="50dp"
+                    android:contentDescription="@string/todo"
+                    android:layout_alignRight="@+id/description" />
+
+
             </RelativeLayout>
 
 

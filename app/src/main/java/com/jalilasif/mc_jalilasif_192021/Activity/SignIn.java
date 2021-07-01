@@ -2,7 +2,6 @@ package com.jalilasif.mc_jalilasif_192021.Activity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.Display;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -14,6 +13,7 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.jalilasif.mc_jalilasif_192021.DashboardActivity;
 import com.jalilasif.mc_jalilasif_192021.R;
 
 
@@ -31,8 +31,8 @@ public class SignIn extends AppCompatActivity {
 
         signIn = findViewById(R.id.btnSignIn);
         signUp = findViewById(R.id.btnSignUp);
-        edt1=findViewById(R.id.edt_email);
-        edt2=findViewById(R.id.edt_pass);
+        edt1=findViewById(R.id.SI_edt_email);
+        edt2=findViewById(R.id.SI_edt_pass);
 
 
         signIn.setOnClickListener(new View.OnClickListener(){
@@ -64,17 +64,13 @@ public class SignIn extends AppCompatActivity {
             public void onComplete(Task<AuthResult> task) {
                 if (task.isSuccessful()) {
                     Toast.makeText(getApplicationContext(), "Successful", Toast.LENGTH_SHORT).show();
-                    Intent i = new Intent(SignIn.this, Display.class);
+                    Intent i = new Intent(SignIn.this, DashboardActivity.class);
                     startActivity(i);
                 } else {
                     Toast.makeText(getApplicationContext(),task.getException().getMessage(), Toast.LENGTH_SHORT).show();
                 }
             }
         });
-
-        String getText = edt1.getText().toString();
-        Intent next = new Intent(SignIn.this, Display.class);
-        next.putExtra( "name", getText);
     }
 
 }
