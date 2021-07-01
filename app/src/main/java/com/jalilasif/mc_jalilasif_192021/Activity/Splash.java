@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+import android.os.Looper;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
@@ -31,12 +32,12 @@ public class Splash extends AppCompatActivity {
         img.setAnimation(scale);
         txt.setAnimation(bottom);
 
-        new Handler().postDelayed(new Runnable() {
+        new Handler(Looper.getMainLooper()).postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent i = new Intent(Splash.this, MainActivity2.class);
+                Intent i = new Intent(Splash.this, SignIn.class);
                 startActivity(i);
             }
-        },3000);
+        },6000);
     }
 }

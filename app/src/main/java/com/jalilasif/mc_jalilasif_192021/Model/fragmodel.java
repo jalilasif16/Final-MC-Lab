@@ -6,7 +6,7 @@ public class fragmodel {
     private String description;
 
 
-    public fragmodel(int image, String title, String description) {
+    public fragmodel(String title, String description) {
         this.title = title;
         this.description = description;
 

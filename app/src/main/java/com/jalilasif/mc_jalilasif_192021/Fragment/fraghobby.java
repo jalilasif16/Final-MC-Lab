@@ -71,11 +71,11 @@ public class fraghobby extends Fragment {
 
         ArrayList<fragmodel> hooby = new ArrayList<>();
 
-        hooby.add(new fragmodel(R.mipmap.ic_launcher, "Cricket", "Good for health"));
-        hooby.add(new fragmodel(R.mipmap.ic_launcher, "Football", "Good for legs"));
-        hooby.add(new fragmodel(R.mipmap.ic_launcher, "Reading", "Skills"));
-        hooby.add(new fragmodel(R.mipmap.ic_launcher, "Singing", "love"));
-        hooby.add(new fragmodel(R.mipmap.ic_launcher, "Outing", "Enjoyment"));
+        hooby.add(new fragmodel("Cricket", "Good for health"));
+        hooby.add(new fragmodel("Football", "Good for legs"));
+        hooby.add(new fragmodel("Reading", "Skills"));
+        hooby.add(new fragmodel("Singing", "love"));
+        hooby.add(new fragmodel("Outing", "Enjoyment"));
 
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
         recyclerView.setAdapter(new fargadapter(hooby));

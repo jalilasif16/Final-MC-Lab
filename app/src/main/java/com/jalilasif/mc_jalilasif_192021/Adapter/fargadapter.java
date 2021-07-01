@@ -55,9 +55,10 @@ public class fargadapter extends RecyclerView.Adapter<fargadapter.ItemViewHolder
     }
 
     public static class ItemViewHolder extends RecyclerView.ViewHolder {
-        private final ImageButton deleteButton;
+
         private final TextView title;
         private final TextView description;
+        private final ImageButton deleteButton;
 
 
         public ItemViewHolder(@NonNull @NotNull View itemView) {
