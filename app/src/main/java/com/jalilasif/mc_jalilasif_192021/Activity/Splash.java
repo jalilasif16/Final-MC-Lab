@@ -13,6 +13,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.jalilasif.mc_jalilasif_192021.DashboardActivity;
 import com.jalilasif.mc_jalilasif_192021.R;
+import com.jalilasif.mc_jalilasif_192021.SQL.MainActivity3;
 
 public class Splash extends AppCompatActivity {
     ImageView img;
@@ -32,7 +33,7 @@ public class Splash extends AppCompatActivity {
         txt.setAnimation(bottom);
 
         new Handler(Looper.getMainLooper()).postDelayed(() -> {
-            Intent i = new Intent(Splash.this, MainActivity.class);
+            Intent i = new Intent(Splash.this, MainActivity3.class);
             startActivity(i);
         },6000);
     }
